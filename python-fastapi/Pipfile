@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asyncpg = "*"
+databases = {extras = ["asyncpg"], version = "*"}
+fastapi = "*"
+pydantic = "*"
+python-dotenv = "*"
+sqlalchemy = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+gunicorn = "*"
+
+[dev-packages]
+black = "*"
+isort = "*"
+mypy = "*"
+pylint = "*"
+sqlalchemy2-stubs = "*"
+
+[requires]
+python_version = "3.10"

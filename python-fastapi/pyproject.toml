@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 100
+exclude = '''
+/(
+    \.eggs
+  | \.git
+)/
+'''
+
+[tool.isort]
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+default_section = "THIRDPARTY"
+
+[tool.pylint.main]
+output-format = "colorized"
+
+[tool.pylint.messages_control]
+disable = [
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "missing-module-docstring",
+    "too-few-public-methods",
+    "no-name-in-module",
+]
