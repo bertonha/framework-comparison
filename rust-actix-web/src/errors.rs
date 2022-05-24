@@ -1,12 +1,12 @@
 use actix_web::{HttpResponse, ResponseError};
 use derive_more::{Display, From};
 
-
 #[derive(Display, From, Debug)]
 pub enum MyError {
     NotFound,
     SQLxError(sqlx::Error),
 }
+
 impl std::error::Error for MyError {}
 
 impl ResponseError for MyError {

@@ -1,9 +1,6 @@
-use crate::{
-    models::{Form, InputForm},
-};
-use sqlx;
-use sqlx::PgPool;
 use crate::errors::MyError;
+use crate::models::{Form, InputForm};
+use sqlx::PgPool;
 
 pub async fn add_form(conn: &PgPool, form_info: InputForm) -> Result<Form, MyError> {
     let _sql = "INSERT INTO forms (title) VALUES ($1) RETURNING *";
