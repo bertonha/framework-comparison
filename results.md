@@ -151,3 +151,22 @@ default ✓ [======================================] 000/100 VUs  7m0s
      vus_max........................: 100    min=100     max=100
 
 # Go chi
+running (7m00.5s), 000/100 VUs, 33602 complete and 0 interrupted iterations
+default ✓ [======================================] 000/100 VUs  7m0s
+
+     data_received..................: 30 MB  72 kB/s
+     data_sent......................: 8.7 MB 21 kB/s
+     http_req_blocked...............: avg=8.86µs  min=0s    med=2µs     max=15.02ms  p(90)=5µs      p(95)=15µs
+     http_req_connecting............: avg=2.41µs  min=0s    med=0s      max=11.3ms   p(90)=0s       p(95)=0s
+     http_req_duration..............: avg=50.9ms  min=463µs med=46.51ms max=288.41ms p(90)=107.24ms p(95)=122.41ms
+       { expected_response:true }...: avg=50.89ms min=463µs med=46.5ms  max=288.41ms p(90)=107.25ms p(95)=122.43ms
+     http_req_failed................: 0.09%  ✓ 91         ✗ 100715
+     http_req_receiving.............: avg=39.56µs min=4µs   med=24µs    max=17.26ms  p(90)=58µs     p(95)=88µs
+     http_req_sending...............: avg=14.74µs min=2µs   med=9µs     max=13.49ms  p(90)=18µs     p(95)=26µs
+     http_req_tls_handshaking.......: avg=0s      min=0s    med=0s      max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=50.84ms min=442µs med=46.45ms max=288.38ms p(90)=107.19ms p(95)=122.35ms
+     http_reqs......................: 100806 239.748152/s
+     iteration_duration.............: avg=1.07s   min=1s    med=1.07s   max=1.28s    p(90)=1.12s    p(95)=1.13s
+     iterations.....................: 33602  79.916051/s
+     vus............................: 100    min=1        max=100
+     vus_max........................: 100    min=100      max=100
