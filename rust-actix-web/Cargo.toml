@@ -9,6 +9,6 @@ edition = "2021"
 actix-web = "4"
 serde = { version = "1", features = ["derive"] }
 config = "0.13"
-dotenv = "0.15"
-sqlx = { version = "0.5", features = [ "runtime-tokio-native-tls" , "postgres" ] }
+dotenvy = "0.15"
+sqlx = { version = "0.6", features = [ "runtime-tokio-native-tls" , "postgres" ] }
 derive_more = "0.99.17"

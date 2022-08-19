@@ -6,7 +6,7 @@ mod models;
 
 use crate::handlers::{create_form, get_form, get_forms};
 use actix_web::{web, App, HttpServer};
-use dotenv::dotenv;
+use dotenvy::dotenv;
 use sqlx::postgres::PgPoolOptions;
 
 #[actix_web::main]
